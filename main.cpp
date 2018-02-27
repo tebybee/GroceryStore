@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-  string list[5]; //array of 5 strings
+  int LIST_SIZE = 5;
+  string list[LIST_SIZE]; //array of 5 strings
   int numItems = 0;
   char input;
   string Item;
@@ -36,9 +37,10 @@ int main()
  if(input == 'q' || input == 'Q')
  {
    cout<<"==ITEMS TO BUY==\n";
-  for(int x=0; x<numItems; x++)
+  for(int x=0; x<LIST_SIZE; x++)
   {
-     cout<<x+1<<" "<<list[x]<<"\n";
+     cout<<x+1;
+     cout<<" "<<list[x]<<"\n";
   }
 
  }
